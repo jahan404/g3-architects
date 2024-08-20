@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body{
+    font-family: "Work Sans", sans-serif;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+/* shared styles */
+.display-flex{
+    display: flex;
+}
+.bg-color{
+    background: rgba(255, 144, 14, 0.1);
+}
+.banner,
+.navbar,
+main{
+    max-width: 85%;
+    margin: 0 auto;
+}
+/* Dark 03 */
+.light-grey-text{
+    color: rgb(114, 114, 114);
+}
+
+.button-primary{
+    border-radius: 8px;
+    background: rgb(255, 144, 14);
+    padding: 18px 32px;
+    border: none;
+
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+
+/* header section */
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 30px;
+}
+.nav-link{
+    text-decoration: none;
+
+    Font-weight: 500;
+    Font-size: 1.1rem;
+    color: rgb(66, 66, 66);
+}
+.bar-name{
+    list-style: none;
+}
+
+.nav-link-container{
+    gap: 40px;
+}
+
+.nav-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+
+/* banner section */
+
+.banner-title{
+    Font-weight: 700;
+    Font-size: 4rem;
+}
+.banner-description{
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.banner-image-upper-part{
+    /* width: 75%; */
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 130px;
+}
+.banner-image img{
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+/* our feature section */
+.our-feature{
+    align-items: center;
+}
+.our-feature-grid-images{
+    max-width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    padding: 80px;
+    border: 2px solid red;
+}
+.our-feature-grid-images img{
+    width: 100%;
+}
+.our-feature-content{
+    max-width: 40%;
+    border: 2px solid red;
+}
+.our-feature-content-heading{
+    Font-weight:700;
+    Font-size:45px;
+    margin-bottom: 1.3rem;
+}
+.orange{
+    color: rgb(255, 144, 14);
+}
+
+
+
+
+@media screen and  (max-width: 576px){
+    .navbar,
+    .nav-link-container,
+    .our-feature{
+        flex-direction: column;
+    }
+
+    .banner,
+    .navbar,
+    .our-feature-grid-images,
+    .our-feature-content,
+    main{
+        
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+
+    /* border: 2px solid red; */
+}
+
+.banner-image-upper-part{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 130px;
+}
+
+.our-feature-grid-images{
+    grid-template-columns: repeat(1,1fr);
+    padding: 0;
+    margin: 0;
+    grid-gap: 20px;
+}
+
+}
+
